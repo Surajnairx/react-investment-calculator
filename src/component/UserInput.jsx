@@ -10,7 +10,7 @@ const UserInput = ({ userInput, onChange }) => {
             name="initialInvestment"
             value={userInput.initialInvestment}
             required
-            onChange={(e) => handleChange("initialInvestment", e.target.value)}
+            onChange={(e) => onChange("initialInvestment", e.target.value)}
           />
         </p>
         <p>
@@ -19,7 +19,7 @@ const UserInput = ({ userInput, onChange }) => {
             type="number"
             value={userInput.annualInvestment}
             required
-            onChange={(e) => handleChange("annualInvestment", e.target.value)}
+            onChange={(e) => onChange("annualInvestment", e.target.value)}
           />
         </p>
       </div>
@@ -30,7 +30,7 @@ const UserInput = ({ userInput, onChange }) => {
             type="number"
             value={userInput.expectedReturn}
             required
-            onChange={(e) => handleChange("expectedReturn", e.target.value)}
+            onChange={(e) => onChange("expectedReturn", e.target.value)}
           />
         </p>
         <p>
